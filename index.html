@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar & Banner</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Navbar Styling */
+        .navbar {
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+        }
+        .navbar-brand img {
+            height: 50px;
+        }
+        .navbar-brand span {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        .nav-link {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        /* Banner Styling */
+        .banner {
+            position: relative;
+            background: url('https://via.placeholder.com/1500x500') no-repeat center center/cover;
+            height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+        .banner::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+        }
+        .banner .content {
+            position: relative;
+            z-index: 2;
+            max-width: 700px;
+        }
+        .banner h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .banner p {
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+        }
+        .banner .btn {
+            font-size: 1.2rem;
+            padding: 12px 25px;
+            border-radius: 30px;
+            background: #ff5722;
+            border: none;
+            transition: all 0.3s ease-in-out;
+        }
+        .banner .btn:hover {
+            background: #ff784e;
+            transform: scale(1.05);
+        }
+        
+        ol {
+            padding-left: 20px;
+            counter-reset: list-counter;
+        }
+           li {
+            background: #f8f9fa;
+                   padding: 12px;
+            margin: 8px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            counter-increment: list-counter;
+            font-weight: 400;
+        }
+        li::before {
+            content: counter(list-counter) ". ";
+            font-weight: bold;
+            color: #41644A;
+            font-size: 18px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- Navbar -->
+    <nav class="navbar navbar-dark">
+        <div class="container d-flex justify-content-between">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="logo.png" alt="Logo">
+                <span class="text-white ms-2"> milestonecard.com /activate</span>
+            </a>
+            <a class="nav-link text-white" href="#">Home</a>
+        </div>
+    </nav>
+    
+    <!-- Banner -->
+    <div class="banner">
+        <div class="content">
+            <h1>Welcome to MyWebsite</h1>
+            <p>Empowering you to achieve success with ease</p>
+            <a href="#" class="btn btn-primary">Get Started</a>
+        </div>
+    </div>
+    
+    <!-- New Section -->
+<section class="section">
+    <div class="container text-center py-5">
+        <h2 class="text-primary fw-bold">WELCOME TO milestonecard.com/activate?</h2>
+        <p class="text-muted fs-5">
+            Welcome to milestonecard.com/activate This is the official portal to activate your Milestone Credit Card quickly and securely. Follow simple steps to verify your card and start using it hassle-free.
+        </p>
+    </div>
+</section>
+<div class="container">
+    <h3>Why Do You Need to Activate Your Milestone Credit Card?</h3>
+    <br>
+    <ol>
+    <li>Ensures the card reaches the rightful owner and prevents unauthorized use.</li>
+    <li>Protects against identity theft and fraudulent transactions.</li>
+    <li>Links the card to your personal account for seamless transactions.</li>
+    <li>Activation is required by the issuer as part of banking regulations.</li>
+    <li>Enables purchases, bill payments, and ATM withdrawals.</li>
+    <li>Allows you to utilize your credit limit and manage your credit score.</li>
+    <li>Confirms that you accept the cardholder terms and conditions.</li>
+    </ol>
+<br>
+    <h3>Where to Find Your Milestone Card Activation Code</h3>
+    <br>
+    <ol>
+        <li>Check the sticker on your new card for activation instructions.</li>
+    <li>Review the welcome letter from Milestone for activation details.</li>
+    <li>Log in to your Milestone online account to complete activation.</li>
+    <li>Contact Milestone customer support for assistance.</li>
+    <li>Check your registered email for any activation information from Milestone.</li>
+    </ol>
+<br>
+    <h3>Activating Your Milestone Card via Phone Call</h3>
+    <br>
+    <ol>
+    <li>Find the activation phone number on the sticker on your card.</li>
+    <li>Call the number using your registered phone.</li>
+    <li>Follow the automated instructions or speak to a representative.</li>
+    <li>Provide your card number, expiration date, and CVV.</li>
+    <li>Verify your identity with personal details such as SSN and date of birth.</li>
+    <li>Confirm activation and wait for a confirmation message.</li>
+    <li>Set your PIN if necessary.</li>
+    <li>Check your account to make sure activation is successful.</li>
+    <li>Contact customer support if you encounter any problems.</li>
+    </ol>
+<br>
+    <h3>How to Check If Your Milestone Card Is Activated?</h3>
+    <br>
+    <ol>
+  <li>Log into your Milestone online account and check your card status.</li>
+    <li>Try making a small purchase to see if the transaction is successful.</li>
+    <li>Call Milestone customer service to inquire about your activation status.</li>
+    <li>Check your email or SMS for an activation confirmation message.</li>
+    <li>Use an ATM to verify if your card is working (if applicable).</li>
+    </ol>
+<br>
+ 
+</div>
+<footer class="bg-dark text-white py-4 mt-4">
+    <div class="text-center">
+        <div class="row">
+
+
+        <hr class=".bg-dark-green">
+        <p class="mb-0">&copy; 2025 milestonecard.com /activate. All Rights Reserved.</p>
+    </div>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
